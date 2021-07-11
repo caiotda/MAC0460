@@ -74,7 +74,7 @@ grid_search = GridSearchCV(
     cv=cv, 
     scoring='accuracy',
     error_score=0,
-    verbose=2)
+    verbose=3)
 
 print("grid search: ", grid_search)
 
