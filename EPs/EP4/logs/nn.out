@@ -1,0 +1,105 @@
+X_train_ori: (60000, 28, 28)
+X_test_ori: (10000, 28, 28)
+Before reshaping:
+X_train: (60000, 14, 14)
+X_test: (10000, 14, 14)
+y_train: (60000,)
+y_test: (10000,)
+After reshaping:
+float32
+float32
+
+Shape of X_train:  (60000, 196)
+Shape of X_test:  (10000, 196)
+
+Minimum value in X_train: 0.0
+Maximum value in X_train: 1.0
+
+Minimum value in X_test: 0.0
+Maximum value in X_test: 1.0
+X_Dtrain: (42000, 196)
+X_Dval: (18000, 196)
+y_Dtrain: (42000,)
+y_Dval: (18000,)
+Fitting 5 folds for each of 16 candidates, totalling 80 fits
+Best: 0.971571 using {'activation': 'relu', 'hidden_layer_sizes': (256, 64), 'solver': 'adam'}
+[CV 1/5] END activation=relu, hidden_layer_sizes=(256, 64), solver=sgd;, score=0.960 total time= 4.7min
+[CV 3/5] END activation=relu, hidden_layer_sizes=(256, 64), solver=adam;, score=0.973 total time= 1.7min
+[CV 1/5] END activation=tanh, hidden_layer_sizes=(32, 64, 64), solver=sgd;, score=0.949 total time= 3.1min
+[CV 3/5] END activation=relu, hidden_layer_sizes=(32, 64, 64), solver=sgd;, score=0.946 total time= 2.0min
+[CV 5/5] END activation=tanh, hidden_layer_sizes=(32, 64, 64), solver=sgd;, score=0.948 total time= 2.8min
+[CV 3/5] END activation=relu, hidden_layer_sizes=(256, 64), solver=sgd;, score=0.957 total time= 4.9min
+[CV 1/5] END activation=relu, hidden_layer_sizes=(128,), solver=adam;, score=0.969 total time= 1.9min
+[CV 3/5] END activation=tanh, hidden_layer_sizes=(32, 64, 64), solver=sgd;, score=0.944 total time= 3.0min
+[CV 2/5] END activation=relu, hidden_layer_sizes=(256, 64), solver=sgd;, score=0.963 total time= 4.9min
+[CV 5/5] END activation=relu, hidden_layer_sizes=(256, 64), solver=sgd;, score=0.959 total time= 3.3min
+[CV 2/5] END activation=tanh, hidden_layer_sizes=(256, 64), solver=adam;, score=0.968 total time= 1.7min
+[CV 2/5] END activation=relu, hidden_layer_sizes=(32, 64, 64), solver=adam;, score=0.956 total time= 1.6min
+[CV 5/5] END activation=relu, hidden_layer_sizes=(128,), solver=sgd;, score=0.937 total time= 1.5min
+[CV 1/5] END activation=tanh, hidden_layer_sizes=(256, 64), solver=adam;, score=0.971 total time= 1.9min
+[CV 4/5] END activation=relu, hidden_layer_sizes=(256, 64), solver=sgd;, score=0.957 total time= 5.1min
+[CV 5/5] END activation=relu, hidden_layer_sizes=(128, 128), solver=adam;, score=0.968 total time=  50.6s
+[CV 3/5] END activation=relu, hidden_layer_sizes=(128,), solver=adam;, score=0.970 total time= 1.0min
+[CV 2/5] END activation=tanh, hidden_layer_sizes=(32, 64, 64), solver=sgd;, score=0.950 total time= 2.1min
+[CV 4/5] END activation=tanh, hidden_layer_sizes=(128,), solver=adam;, score=0.968 total time= 1.3min
+[CV 2/5] END activation=relu, hidden_layer_sizes=(128, 128), solver=sgd;, score=0.958 total time= 3.7min
+[CV 2/5] END activation=tanh, hidden_layer_sizes=(128,), solver=adam;, score=0.970 total time= 1.6min
+[CV 4/5] END activation=relu, hidden_layer_sizes=(32, 64, 64), solver=adam;, score=0.957 total time= 1.6min
+[CV 5/5] END activation=tanh, hidden_layer_sizes=(32, 64, 64), solver=adam;, score=0.960 total time= 2.1min
+[CV 1/5] END activation=tanh, hidden_layer_sizes=(128,), solver=adam;, score=0.969 total time= 1.7min
+[CV 2/5] END activation=relu, hidden_layer_sizes=(256, 64), solver=adam;, score=0.973 total time= 1.5min
+[CV 4/5] END activation=relu, hidden_layer_sizes=(128,), solver=sgd;, score=0.939 total time= 2.3min
+[CV 3/5] END activation=tanh, hidden_layer_sizes=(128,), solver=adam;, score=0.969 total time= 1.8min
+[CV 4/5] END activation=relu, hidden_layer_sizes=(32, 64, 64), solver=sgd;, score=0.952 total time= 2.4min
+[CV 1/5] END activation=tanh, hidden_layer_sizes=(128, 128), solver=sgd;, score=0.946 total time= 3.2min
+[CV 3/5] END activation=relu, hidden_layer_sizes=(128, 128), solver=adam;, score=0.970 total time= 1.3min
+[CV 1/5] END activation=relu, hidden_layer_sizes=(128,), solver=sgd;, score=0.939 total time= 2.2min
+[CV 5/5] END activation=tanh, hidden_layer_sizes=(256, 64), solver=adam;, score=0.968 total time= 2.2min
+[CV 5/5] END activation=relu, hidden_layer_sizes=(32, 64, 64), solver=adam;, score=0.960 total time= 2.1min
+[CV 1/5] END activation=tanh, hidden_layer_sizes=(128, 128), solver=adam;, score=0.969 total time= 2.0min
+[CV 5/5] END activation=tanh, hidden_layer_sizes=(128,), solver=adam;, score=0.969 total time= 1.6min
+[CV 5/5] END activation=relu, hidden_layer_sizes=(256, 64), solver=adam;, score=0.972 total time= 1.6min
+[CV 1/5] END activation=tanh, hidden_layer_sizes=(32, 64, 64), solver=adam;, score=0.961 total time= 1.9min
+[CV 4/5] END activation=tanh, hidden_layer_sizes=(256, 64), solver=adam;, score=0.968 total time= 2.2min
+[CV 4/5] END activation=relu, hidden_layer_sizes=(256, 64), solver=adam;, score=0.969 total time= 1.6min
+[CV 4/5] END activation=tanh, hidden_layer_sizes=(32, 64, 64), solver=adam;, score=0.957 total time= 1.8min
+[CV 3/5] END activation=tanh, hidden_layer_sizes=(256, 64), solver=adam;, score=0.960 total time= 2.4min
+[CV 2/5] END activation=relu, hidden_layer_sizes=(128, 128), solver=adam;, score=0.966 total time=  55.1s
+[CV 5/5] END activation=relu, hidden_layer_sizes=(128,), solver=adam;, score=0.967 total time= 1.1min
+[CV 4/5] END activation=tanh, hidden_layer_sizes=(32, 64, 64), solver=sgd;, score=0.949 total time= 2.2min
+[CV 1/5] END activation=tanh, hidden_layer_sizes=(128,), solver=sgd;, score=0.923 total time= 1.7min
+[CV 4/5] END activation=relu, hidden_layer_sizes=(128, 128), solver=sgd;, score=0.955 total time= 2.7min
+[CV 3/5] END activation=tanh, hidden_layer_sizes=(128, 128), solver=sgd;, score=0.941 total time= 3.1min
+[CV 1/5] END activation=relu, hidden_layer_sizes=(32, 64, 64), solver=adam;, score=0.958 total time= 1.4min
+[CV 3/5] END activation=relu, hidden_layer_sizes=(128,), solver=sgd;, score=0.935 total time= 1.6min
+[CV 5/5] END activation=tanh, hidden_layer_sizes=(128, 128), solver=sgd;, score=0.943 total time= 2.9min
+[CV 2/5] END activation=relu, hidden_layer_sizes=(32, 64, 64), solver=sgd;, score=0.951 total time= 2.3min
+[CV 3/5] END activation=tanh, hidden_layer_sizes=(128, 128), solver=adam;, score=0.969 total time= 1.9min
+[CV 2/5] END activation=tanh, hidden_layer_sizes=(128,), solver=sgd;, score=0.923 total time= 1.9min
+[CV 1/5] END activation=relu, hidden_layer_sizes=(32, 64, 64), solver=sgd;, score=0.954 total time= 2.2min
+[CV 2/5] END activation=tanh, hidden_layer_sizes=(128, 128), solver=adam;, score=0.971 total time= 2.2min
+[CV 4/5] END activation=tanh, hidden_layer_sizes=(128,), solver=sgd;, score=0.922 total time= 1.7min
+[CV 3/5] END activation=relu, hidden_layer_sizes=(32, 64, 64), solver=adam;, score=0.956 total time= 2.3min
+[CV 4/5] END activation=tanh, hidden_layer_sizes=(128, 128), solver=adam;, score=0.968 total time= 1.9min
+[CV 3/5] END activation=tanh, hidden_layer_sizes=(128,), solver=sgd;, score=0.918 total time= 2.0min
+[CV 5/5] END activation=relu, hidden_layer_sizes=(32, 64, 64), solver=sgd;, score=0.950 total time= 2.4min
+[CV 5/5] END activation=tanh, hidden_layer_sizes=(128, 128), solver=adam;, score=0.971 total time= 2.2min
+[CV 5/5] END activation=tanh, hidden_layer_sizes=(128,), solver=sgd;, score=0.922 total time= 1.8min
+[CV 4/5] END activation=relu, hidden_layer_sizes=(128, 128), solver=adam;, score=0.966 total time=  53.9s
+[CV 4/5] END activation=relu, hidden_layer_sizes=(128,), solver=adam;, score=0.966 total time= 1.5min
+[CV 2/5] END activation=tanh, hidden_layer_sizes=(128, 128), solver=sgd;, score=0.945 total time= 4.0min
+[CV 3/5] END activation=relu, hidden_layer_sizes=(128, 128), solver=sgd;, score=0.952 total time= 3.0min
+[CV 4/5] END activation=tanh, hidden_layer_sizes=(128, 128), solver=sgd;, score=0.943 total time= 3.5min
+[CV 5/5] END activation=relu, hidden_layer_sizes=(128, 128), solver=sgd;, score=0.956 total time= 3.7min
+[CV 4/5] END activation=tanh, hidden_layer_sizes=(256, 64), solver=sgd;, score=0.943 total time= 3.6min
+[CV 1/5] END activation=relu, hidden_layer_sizes=(128, 128), solver=adam;, score=0.971 total time= 1.4min
+[CV 2/5] END activation=relu, hidden_layer_sizes=(128,), solver=sgd;, score=0.939 total time= 2.2min
+[CV 2/5] END activation=tanh, hidden_layer_sizes=(256, 64), solver=sgd;, score=0.947 total time= 3.7min
+[CV 2/5] END activation=relu, hidden_layer_sizes=(128,), solver=adam;, score=0.969 total time= 1.6min
+[CV 3/5] END activation=tanh, hidden_layer_sizes=(32, 64, 64), solver=adam;, score=0.958 total time= 2.0min
+[CV 1/5] END activation=tanh, hidden_layer_sizes=(256, 64), solver=sgd;, score=0.943 total time= 3.8min
+[CV 1/5] END activation=relu, hidden_layer_sizes=(128, 128), solver=sgd;, score=0.956 total time= 3.6min
+[CV 3/5] END activation=tanh, hidden_layer_sizes=(256, 64), solver=sgd;, score=0.944 total time= 3.8min
+[CV 1/5] END activation=relu, hidden_layer_sizes=(256, 64), solver=adam;, score=0.972 total time= 1.6min
+[CV 2/5] END activation=tanh, hidden_layer_sizes=(32, 64, 64), solver=adam;, score=0.958 total time= 2.1min
+[CV 5/5] END activation=tanh, hidden_layer_sizes=(256, 64), solver=sgd;, score=0.945 total time= 3.8min

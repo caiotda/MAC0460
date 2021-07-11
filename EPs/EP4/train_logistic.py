@@ -1,9 +1,8 @@
 import numpy as np
-import matplotlib.pyplot as plt
 from tensorflow.keras.datasets import mnist
 from sklearn.model_selection import train_test_split
 
-from sklearn.model_selection import RepeatedStratifiedKFold, GridSearchCV
+from sklearn.model_selection import StratifiedKFold, GridSearchCV
 import joblib
 
 from sklearn.linear_model import LogisticRegression
@@ -61,7 +60,7 @@ penalty = ['l2']
 c_values = [100, 10, 1.0, 0.1, 0.01]
 
 grid = dict(solver=solvers,penalty=penalty,C=c_values)
-cv = RepeatedStratifiedKFold(n_splits=4, n_repeats=1, random_state=np.random.randint(0, 100))
+cv = StratifiedKFold(n_splits=5)
 
 grid_search = GridSearchCV(
     estimator=lr, 
@@ -74,7 +73,9 @@ grid_search = GridSearchCV(
 
 grid_result = grid_search.fit(X_Dtrain, y_Dtrain)
 
+print("Best: %f using %s" % (grid_result.best_score_, grid_result.best_params_))
+
 score = grid_result.best_score_
 c, penalty, solver = grid_result.best_params_
-filename = f"logistic_regression_score={score}_C={C}_penalty={penalty}_solver={solver}.sav"
+filename = f"logistic_regression_score={score}_C={c}_penalty={penalty}_solver={solver}.sav"
 joblib.dump(grid_search, filename)

@@ -1,9 +1,8 @@
 import numpy as np
-import matplotlib.pyplot as plt
 from tensorflow.keras.datasets import mnist
 from sklearn.model_selection import train_test_split
 
-from sklearn.model_selection import RepeatedStratifiedKFold, GridSearchCV
+from sklearn.model_selection import StratifiedKFold, GridSearchCV
 import joblib
 
 from sklearn.neural_network import MLPClassifier
@@ -67,8 +66,8 @@ activation = ["relu", "tanh"]
 solver = ["adam", "sgd"]
 
 
-grid = dict(hidden_layer_sizes=hl_sizessizes, activation=activation, solver=solver)
-cv = RepeatedStratifiedKFold(n_splits=5, random_state=1)
+grid = dict(hidden_layer_sizes=hl_sizes, activation=activation, solver=solver)
+cv = StratifiedKFold(n_splits=5)
 grid_search = GridSearchCV(
     estimator=mlp,
     param_grid=grid, 
@@ -84,3 +83,4 @@ score = grid_result.best_score_
 hl, act, solver = grid_result.best_params_
 filename = f"neural_net_score={score}_hl_sizes={hl}_activation={act}_solver={solver}.sav"
 joblib.dump(grid_search, filename)
+

@@ -1,0 +1,100 @@
+X_train_ori: (60000, 28, 28)
+X_test_ori: (10000, 28, 28)
+Before reshaping:
+X_train: (60000, 14, 14)
+X_test: (10000, 14, 14)
+y_train: (60000,)
+y_test: (10000,)
+After reshaping:
+float32
+float32
+
+Shape of X_train:  (60000, 196)
+Shape of X_test:  (10000, 196)
+
+Minimum value in X_train: 0.0
+Maximum value in X_train: 1.0
+
+Minimum value in X_test: 0.0
+Maximum value in X_test: 1.0
+X_Dtrain: (42000, 196)
+X_Dval: (18000, 196)
+y_Dtrain: (42000,)
+y_Dval: (18000,)
+Fitting 5 folds for each of 15 candidates, totalling 75 fits
+[CV 2/5] END C=1.0, penalty=l2, solver=newton-cg;, score=0.910 total time= 2.1min
+[CV 3/5] END C=1.0, penalty=l2, solver=liblinear;, score=0.898 total time= 1.0min
+[CV 4/5] END ...C=0.1, penalty=l2, solver=lbfgs;, score=0.908 total time=  27.5s
+[CV 4/5] END ..C=0.01, penalty=l2, solver=lbfgs;, score=0.892 total time=  17.5s
+[CV 3/5] END C=10, penalty=l2, solver=liblinear;, score=0.900 total time= 1.9min
+[CV 5/5] END ...C=1.0, penalty=l2, solver=lbfgs;, score=0.905 total time= 1.2min
+[CV 2/5] END ...C=0.1, penalty=l2, solver=lbfgs;, score=0.904 total time=  31.1s
+[CV 2/5] END ..C=0.01, penalty=l2, solver=lbfgs;, score=0.888 total time=  18.3s
+[CV 2/5] END ....C=10, penalty=l2, solver=lbfgs;, score=0.910 total time= 3.3min
+[CV 2/5] END C=0.1, penalty=l2, solver=liblinear;, score=0.897 total time=  36.4s
+[CV 5/5] END C=10, penalty=l2, solver=liblinear;, score=0.899 total time= 1.8min
+[CV 4/5] END ...C=1.0, penalty=l2, solver=lbfgs;, score=0.911 total time= 1.3min
+[CV 1/5] END ...C=0.1, penalty=l2, solver=lbfgs;, score=0.904 total time=  30.8s
+[CV 1/5] END ..C=0.01, penalty=l2, solver=lbfgs;, score=0.886 total time=  20.1s
+[CV 2/5] END C=100, penalty=l2, solver=liblinear;, score=0.904 total time= 3.3min
+[CV 3/5] END C=0.1, penalty=l2, solver=liblinear;, score=0.892 total time=  36.8s
+[CV 3/5] END ....C=10, penalty=l2, solver=lbfgs;, score=0.910 total time= 1.7min
+[CV 2/5] END ...C=1.0, penalty=l2, solver=lbfgs;, score=0.910 total time=  53.3s
+[CV 1/5] END C=0.1, penalty=l2, solver=newton-cg;, score=0.904 total time= 1.1min
+[CV 1/5] END C=0.01, penalty=l2, solver=liblinear;, score=0.875 total time=  18.1s
+[CV 5/5] END ....C=10, penalty=l2, solver=lbfgs;, score=0.906 total time= 3.2min
+[CV 1/5] END C=0.1, penalty=l2, solver=liblinear;, score=0.895 total time=  43.2s
+[CV 1/5] END C=1.0, penalty=l2, solver=newton-cg;, score=0.909 total time= 1.9min
+[CV 1/5] END C=1.0, penalty=l2, solver=liblinear;, score=0.899 total time= 1.2min
+[CV 3/5] END ...C=0.1, penalty=l2, solver=lbfgs;, score=0.901 total time=  29.7s
+[CV 5/5] END ..C=0.01, penalty=l2, solver=lbfgs;, score=0.878 total time=  20.5s
+[CV 5/5] END C=10, penalty=l2, solver=newton-cg;, score=0.906 total time= 4.0min
+[CV 4/5] END C=100, penalty=l2, solver=liblinear;, score=0.909 total time= 1.1min
+[CV 5/5] END C=1.0, penalty=l2, solver=newton-cg;, score=0.905 total time= 2.9min
+[CV 1/5] END ....C=10, penalty=l2, solver=lbfgs;, score=0.911 total time= 3.2min
+[CV 5/5] END ...C=0.1, penalty=l2, solver=lbfgs;, score=0.898 total time=  29.0s
+[CV 2/5] END C=0.01, penalty=l2, solver=liblinear;, score=0.881 total time=  22.1s
+[CV 5/5] END C=100, penalty=l2, solver=liblinear;, score=0.899 total time= 3.7min
+[CV 3/5] END C=0.01, penalty=l2, solver=liblinear;, score=0.876 total time=  21.2s
+[CV 4/5] END ...C=100, penalty=l2, solver=lbfgs;, score=0.911 total time= 3.4min
+[CV 5/5] END C=0.1, penalty=l2, solver=liblinear;, score=0.889 total time=  39.0s
+[CV 1/5] END C=100, penalty=l2, solver=liblinear;, score=0.900 total time= 1.2min
+[CV 1/5] END ...C=1.0, penalty=l2, solver=lbfgs;, score=0.909 total time=  50.3s
+[CV 2/5] END C=1.0, penalty=l2, solver=liblinear;, score=0.902 total time=  34.4s
+[CV 2/5] END C=0.1, penalty=l2, solver=newton-cg;, score=0.904 total time= 1.1min
+[CV 4/5] END C=0.01, penalty=l2, solver=liblinear;, score=0.884 total time=  21.3s
+[CV 4/5] END C=10, penalty=l2, solver=liblinear;, score=0.909 total time=  35.5s
+[CV 3/5] END C=1.0, penalty=l2, solver=newton-cg;, score=0.909 total time= 1.7min
+[CV 4/5] END C=1.0, penalty=l2, solver=liblinear;, score=0.907 total time= 1.1min
+[CV 4/5] END C=0.1, penalty=l2, solver=liblinear;, score=0.901 total time=  14.6s
+[CV 3/5] END ..C=0.01, penalty=l2, solver=lbfgs;, score=0.883 total time=  15.3s
+[CV 5/5] END C=0.01, penalty=l2, solver=liblinear;, score=0.873 total time=  15.0s
+[CV 1/5] END C=10, penalty=l2, solver=liblinear;, score=0.900 total time= 1.8min
+[CV 3/5] END ...C=1.0, penalty=l2, solver=lbfgs;, score=0.909 total time= 1.1min
+[CV 4/5] END C=0.1, penalty=l2, solver=newton-cg;, score=0.908 total time= 1.2min
+[CV 2/5] END C=10, penalty=l2, solver=liblinear;, score=0.904 total time=  47.1s
+[CV 4/5] END C=1.0, penalty=l2, solver=newton-cg;, score=0.911 total time= 1.6min
+[CV 5/5] END C=1.0, penalty=l2, solver=liblinear;, score=0.897 total time=  23.1s
+[CV 3/5] END C=0.1, penalty=l2, solver=newton-cg;, score=0.901 total time= 1.3min
+[CV 4/5] END ....C=10, penalty=l2, solver=lbfgs;, score=0.912 total time= 3.0min
+[CV 5/5] END C=0.1, penalty=l2, solver=newton-cg;, score=0.898 total time= 1.2min
+[CV 2/5] END ...C=100, penalty=l2, solver=lbfgs;, score=0.909 total time= 3.5min
+[CV 2/5] END C=0.01, penalty=l2, solver=newton-cg;, score=0.888 total time=  46.2s
+[CV 5/5] END ...C=100, penalty=l2, solver=lbfgs;, score=0.906 total time= 3.6min
+[CV 5/5] END C=0.01, penalty=l2, solver=newton-cg;, score=0.878 total time=  42.2s
+[CV 3/5] END C=10, penalty=l2, solver=newton-cg;, score=0.910 total time= 4.3min
+[CV 2/5] END C=10, penalty=l2, solver=newton-cg;, score=0.910 total time= 4.3min
+[CV 3/5] END ...C=100, penalty=l2, solver=lbfgs;, score=0.910 total time= 3.5min
+[CV 4/5] END C=0.01, penalty=l2, solver=newton-cg;, score=0.892 total time=  50.3s
+[CV 3/5] END C=100, penalty=l2, solver=liblinear;, score=0.900 total time= 3.5min
+[CV 1/5] END C=0.01, penalty=l2, solver=newton-cg;, score=0.886 total time=  58.7s
+[CV 1/5] END ...C=100, penalty=l2, solver=lbfgs;, score=0.911 total time= 3.5min
+[CV 3/5] END C=0.01, penalty=l2, solver=newton-cg;, score=0.883 total time=  58.2s
+[CV 1/5] END C=10, penalty=l2, solver=newton-cg;, score=0.911 total time= 4.5min
+[CV 4/5] END C=10, penalty=l2, solver=newton-cg;, score=0.912 total time= 4.5min
+Best: 0.909738 using {'C': 10, 'penalty': 'l2', 'solver': 'newton-cg'}
+[CV 3/5] END C=100, penalty=l2, solver=newton-cg;, score=0.910 total time= 6.3min
+[CV 2/5] END C=100, penalty=l2, solver=newton-cg;, score=0.909 total time= 6.4min
+[CV 4/5] END C=100, penalty=l2, solver=newton-cg;, score=0.911 total time= 6.5min
+[CV 5/5] END C=100, penalty=l2, solver=newton-cg;, score=0.905 total time= 6.9min
+[CV 1/5] END C=100, penalty=l2, solver=newton-cg;, score=0.910 total time= 8.0min
